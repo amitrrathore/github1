@@ -29,7 +29,7 @@ def edit(request,id):
         form=editform(request.POST,instance=todos)
         if form.is_valid:
             form.save()
-            print('hello')
+            print('hello world')
         return redirect('/')
     else:
         form=editform(instance=todos)
